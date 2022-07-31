@@ -1,0 +1,269 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+p, a{
+    font-size: 0.9rem;
+    letter-spacing: 1.2px;
+
+}
+h1,h2,h3,h4,h5,h6{
+    letter-spacing: 1.1px;
+}
+a{
+    text-decoration: none;
+}
+header{
+    .container-fluid{
+        background-color: #222222;
+        .container{
+            #navbar{
+                ul{
+                    a{
+                        padding: 0.5rem;
+                        transition: all .5s ease-in-out;
+                        border-bottom: 2px solid #222222;
+                        &:hover{
+                            border-bottom: 2px solid #018BD3;
+                            border-radius: 9px;
+                            padding: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// randevu
+.randevu-icerik{
+    background-color: #222222;
+    .randevu{
+        padding: 1.5rem;
+        .form-grup{
+            padding: 0.5rem 0 ;
+            .form-wrap{
+                padding: 0.3rem;
+                border: 0;
+                border-bottom: 1px solid rgba(211, 209, 209, 0.459);
+                transition: all .5s ease-in-out;
+                width: 85%;
+                &:hover{
+                    border-bottom: 1px solid rgb(255, 255, 255);
+                }
+                &:focus{
+                    border-bottom: 1px solid rgb(255, 255, 255);
+                }
+                input,textarea{
+                    background-color:#222222;
+                    resize: none;
+                    padding: 0.5rem;
+                    border: 0;
+                    color: white;
+                    width: 100%;
+                    &:focus{
+                        outline:none;
+                    }
+                }
+            }
+        }
+    } 
+}
+.randevu{
+    padding: 1.5rem;
+    .form-grup{
+        padding: 0.5rem 0 ;
+        .form-wrap{
+            padding: 0.3rem;
+            border: 0;
+            border-bottom: 1px solid rgba(211, 209, 209, 0.459);
+            transition: all .5s ease-in-out;
+            width: 85%;
+            &:hover{
+                border-bottom: 1px solid rgb(255, 255, 255);
+            }
+            &:focus{
+                border-bottom: 1px solid rgb(255, 255, 255);
+            }
+            input,textarea{
+                resize: none;
+                padding: 0.5rem;
+                border: 0;
+                color: white;
+                width: 100%;
+                &:focus{
+                    outline:none;
+                }
+            }
+        }
+    }
+}
+.randevu-icerik {
+        .btn-wrap{
+        .button{
+            margin-top: 1rem;
+            border: 0;
+            width: 100%;
+            padding: 0.75rem;
+            font-size: 1.2rem;
+            transition: all .3s ease-in-out;
+            &:hover{
+                background-color: #018BD3;
+                color: white;
+            }
+        }
+    }
+}
+
+
+// giris aciklama
+.aciklama-icerik{
+    hr{     
+        border: none;
+        border-left: 1px solid black;
+        height: 5.5rem;
+        width: 1px;       
+    }
+}
+
+// ilk icerik
+section{
+    .container{
+        .row{
+            .on-icerik-icon{
+                width: 5rem;
+                max-height:4rem;
+                padding:3rem 3rem;
+                border: 2px solid rgb(230, 230, 230);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+                transition: all .5s ease-in-out;
+                .on-icerik-hover{
+                    opacity: 0;
+                    transition: all .2s ease-in-out;
+                    width: 5rem;
+                    max-height:4rem;
+                    padding:3rem 3rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+                &:hover{
+                    background-color: #018BD3;
+                    border: 2px solid #018BD3;
+                    .ilk-once{
+                        opacity: 0;
+                    }
+                }
+            }
+            .on-icerik-yazi{
+                h3{
+                padding-bottom: 0.75rem;
+                }
+                .cizgi{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    hr{
+                        color: #018BD3;
+                        width: 10rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// footer
+footer{
+    background-color: #222222;
+    .container-fluid{
+        background:url('/images/footerlogo.png') no-repeat center center;
+        h4{
+            padding-bottom: 0.75rem;
+        }
+        .footer-digital{
+            .hizmet-hakkinda-items, .ulasim-items{
+                padding: 0.5rem;
+                font-size: 0.8rem;
+                a,p{
+                    color: #dedede;
+                }
+            }
+            .hizmet-hakkinda-items{
+                transition: all .4s ease-in-out;
+                &:hover{
+                    color: #018BD3;
+                    transform: translate(1rem);
+                    -webkit-transform: translate(1rem);
+                }
+                a{
+                    &:hover{
+                        color: #018BD3;
+                    }
+                }
+            }
+        }
+        .ulasim{
+            .ulasim-items{
+                margin-top: -1rem;
+                p{font-size: 0.8rem;}
+                
+            }
+        }
+    }
+    .sosyal{
+        li{
+            transition: all .4s ease-in-out;
+            &:hover{
+            transform: translate(1rem);
+            -webkit-transform: translate(1rem);    
+            }
+            a{
+            color: white;
+            font-size: 0.9rem;
+            transition: all .4s ease-in-out;
+            display: inline-block;
+            width: 100%;
+            }
+        }
+        .insta{
+            a{
+                &:hover{
+                    color: #E42148;
+                }
+            }     
+        }
+        .twitt{
+            a{
+                &:hover{
+                    color: #00acee;
+                }
+            }     
+        }
+        .face{
+            a{
+                &:hover{
+                    color: #4062aa;
+                }
+            }     
+        }
+    }
+}
+
+
+.footer-haklar{
+    background-color: #222222;
+    a{
+        font-size: 0.8rem;
+        color: #6c747a;
+        transition: all .2s ease-in-out;
+        &:hover{
+            color: #bbbcbf;
+        }
+    }
+}

@@ -1,0 +1,227 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+p, a {
+  font-size: 0.9rem;
+  letter-spacing: 1.2px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 1.1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header .container-fluid {
+  background-color: #222222;
+}
+header .container-fluid .container #navbar ul a {
+  padding: 0.5rem;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 2px solid #222222;
+}
+header .container-fluid .container #navbar ul a:hover {
+  border-bottom: 2px solid #018BD3;
+  border-radius: 9px;
+  padding: 0.5rem;
+}
+
+.randevu-icerik {
+  background-color: #222222;
+}
+.randevu-icerik .randevu {
+  padding: 1.5rem;
+}
+.randevu-icerik .randevu .form-grup {
+  padding: 0.5rem 0;
+}
+.randevu-icerik .randevu .form-grup .form-wrap {
+  padding: 0.3rem;
+  border: 0;
+  border-bottom: 1px solid rgba(211, 209, 209, 0.459);
+  transition: all 0.5s ease-in-out;
+  width: 85%;
+}
+.randevu-icerik .randevu .form-grup .form-wrap:hover {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.randevu-icerik .randevu .form-grup .form-wrap:focus {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.randevu-icerik .randevu .form-grup .form-wrap input, .randevu-icerik .randevu .form-grup .form-wrap textarea {
+  background-color: #222222;
+  resize: none;
+  padding: 0.5rem;
+  border: 0;
+  color: white;
+  width: 100%;
+}
+.randevu-icerik .randevu .form-grup .form-wrap input:focus, .randevu-icerik .randevu .form-grup .form-wrap textarea:focus {
+  outline: none;
+}
+
+.randevu {
+  padding: 1.5rem;
+}
+.randevu .form-grup {
+  padding: 0.5rem 0;
+}
+.randevu .form-grup .form-wrap {
+  padding: 0.3rem;
+  border: 0;
+  border-bottom: 1px solid rgba(211, 209, 209, 0.459);
+  transition: all 0.5s ease-in-out;
+  width: 85%;
+}
+.randevu .form-grup .form-wrap:hover {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.randevu .form-grup .form-wrap:focus {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.randevu .form-grup .form-wrap input, .randevu .form-grup .form-wrap textarea {
+  resize: none;
+  padding: 0.5rem;
+  border: 0;
+  color: white;
+  width: 100%;
+}
+.randevu .form-grup .form-wrap input:focus, .randevu .form-grup .form-wrap textarea:focus {
+  outline: none;
+}
+
+.randevu-icerik .btn-wrap .button {
+  margin-top: 1rem;
+  border: 0;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+.randevu-icerik .btn-wrap .button:hover {
+  background-color: #018BD3;
+  color: white;
+}
+
+.aciklama-icerik hr {
+  border: none;
+  border-left: 1px solid black;
+  height: 5.5rem;
+  width: 1px;
+}
+
+section .container .row .on-icerik-icon {
+  width: 5rem;
+  max-height: 4rem;
+  padding: 3rem 3rem;
+  border: 2px solid rgb(230, 230, 230);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  transition: all 0.5s ease-in-out;
+}
+section .container .row .on-icerik-icon .on-icerik-hover {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  width: 5rem;
+  max-height: 4rem;
+  padding: 3rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .container .row .on-icerik-icon .on-icerik-hover:hover {
+  opacity: 1;
+}
+section .container .row .on-icerik-icon:hover {
+  background-color: #018BD3;
+  border: 2px solid #018BD3;
+}
+section .container .row .on-icerik-icon:hover .ilk-once {
+  opacity: 0;
+}
+section .container .row .on-icerik-yazi h3 {
+  padding-bottom: 0.75rem;
+}
+section .container .row .on-icerik-yazi .cizgi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section .container .row .on-icerik-yazi .cizgi hr {
+  color: #018BD3;
+  width: 10rem;
+}
+
+footer {
+  background-color: #222222;
+}
+footer .container-fluid {
+  background: url("/images/footerlogo.png") no-repeat center center;
+}
+footer .container-fluid h4 {
+  padding-bottom: 0.75rem;
+}
+footer .container-fluid .footer-digital .hizmet-hakkinda-items, footer .container-fluid .footer-digital .ulasim-items {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+footer .container-fluid .footer-digital .hizmet-hakkinda-items a, footer .container-fluid .footer-digital .hizmet-hakkinda-items p, footer .container-fluid .footer-digital .ulasim-items a, footer .container-fluid .footer-digital .ulasim-items p {
+  color: #dedede;
+}
+footer .container-fluid .footer-digital .hizmet-hakkinda-items {
+  transition: all 0.4s ease-in-out;
+}
+footer .container-fluid .footer-digital .hizmet-hakkinda-items:hover {
+  color: #018BD3;
+  transform: translate(1rem);
+  -webkit-transform: translate(1rem);
+}
+footer .container-fluid .footer-digital .hizmet-hakkinda-items a:hover {
+  color: #018BD3;
+}
+footer .container-fluid .ulasim .ulasim-items {
+  margin-top: -1rem;
+}
+footer .container-fluid .ulasim .ulasim-items p {
+  font-size: 0.8rem;
+}
+footer .sosyal li {
+  transition: all 0.4s ease-in-out;
+}
+footer .sosyal li:hover {
+  transform: translate(1rem);
+  -webkit-transform: translate(1rem);
+}
+footer .sosyal li a {
+  color: white;
+  font-size: 0.9rem;
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  width: 100%;
+}
+footer .sosyal .insta a:hover {
+  color: #E42148;
+}
+footer .sosyal .twitt a:hover {
+  color: #00acee;
+}
+footer .sosyal .face a:hover {
+  color: #4062aa;
+}
+
+.footer-haklar {
+  background-color: #222222;
+}
+.footer-haklar a {
+  font-size: 0.8rem;
+  color: #6c747a;
+  transition: all 0.2s ease-in-out;
+}
+.footer-haklar a:hover {
+  color: #bbbcbf;
+}/*# sourceMappingURL=main.css.map */
