@@ -4,7 +4,7 @@
 
 p, a {
   font-size: 0.9rem;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.1px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -157,6 +157,13 @@ section .container .row .on-icerik-yazi .cizgi hr {
   width: 10rem;
 }
 
+.ikinci-icerik {
+  transition: all 0.5s ease-in-out;
+}
+.ikinci-icerik:hover {
+  background: rgb(247, 247, 247);
+}
+
 footer {
   background-color: #222222;
 }
@@ -188,6 +195,9 @@ footer .container-fluid .ulasim .ulasim-items {
   margin-top: -1rem;
 }
 footer .container-fluid .ulasim .ulasim-items p {
+  font-size: 0.8rem;
+}
+footer .container-fluid .ulasim .footer-icons {
   font-size: 0.8rem;
 }
 footer .sosyal li {
