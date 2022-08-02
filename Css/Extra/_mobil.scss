@@ -1,0 +1,84 @@
+@media (min-width: 768px) and (max-width: 992px) {
+    .randevu-icerik {
+    margin-top: 2rem;
+    }
+    .slider{
+        margin-bottom: 8rem;
+    }
+    .aciklama {
+        margin-top: 25rem;
+        margin-bottom: 1rem;
+        .aciklama-resim{
+            img{
+                width: 40%;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media (max-width:768px){
+    .aciklama{
+        .aciklama-resim{
+            img{
+                width: 50%;
+            }
+        }
+    }
+}
+
+// menu telefon modu
+@media (max-width:768px){
+    .mobil-menu{
+        background-color: #222222;
+        .logo{
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+            
+        }
+        ul{
+            position: fixed;
+            margin-top: 7rem;
+            background-color: #222222;     
+            width: 100%;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            list-style: none;
+            left: -100%;
+            top: 0;
+            transition: all .5s;
+            padding: 0;
+            li{
+                width: 100%;
+                text-align: center;
+                padding:0;
+                a{
+                    color: white;
+                    font-size: 1.2rem;
+                    display: inline-block;
+                    padding: 1rem;
+                    width: 100%;
+                    transition: all .5s;
+                    &:hover{
+                        background-color: #018BD3;
+                    }
+                }
+            }
+        }
+        .mobil-menu-icons{
+            font-size: 3rem;
+            color: #018BD3;
+        }
+        #menuBtn{
+            display: none;
+        }
+        #menuBtn:checked ~ ul{
+            left: 0;
+        }
+    }
+}

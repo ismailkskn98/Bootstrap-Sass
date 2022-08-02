@@ -1,3 +1,4 @@
+@import 'mobil';
 *{
     font-family: 'Open Sans', sans-serif;
 }
@@ -16,7 +17,7 @@ header{
     .container-fluid{
         background-color: #222222;
         .container{
-            #navbar{
+            #menu{
                 ul{
                     a{
                         padding: 0.5rem;
@@ -116,12 +117,20 @@ header{
 
 
 // giris aciklama
-.aciklama-icerik{
-    hr{     
-        border: none;
-        border-left: 1px solid black;
-        height: 5.5rem;
-        width: 1px;       
+.aciklama{
+    .aciklama-resim{
+        img{
+            max-width: 70%;
+            height: auto;
+        }
+    }
+    .aciklama-icerik{
+        hr{     
+            border: none;
+            border-left: 1px solid black;
+            height: 5.5rem;
+            width: 1px;       
+        }
     }
 }
 
@@ -184,6 +193,12 @@ section{
     &:hover{
         background: rgb(247, 247, 247);
     }
+    .resim{
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
 }
 
 
@@ -192,6 +207,7 @@ footer{
     background-color: #222222;
     .container-fluid{
         background:url('/images/footerlogo.png') no-repeat center center;
+        border-top: 2px solid #018BD3;
         h4{
             padding-bottom: 0.75rem;
         }

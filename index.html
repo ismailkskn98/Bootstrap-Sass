@@ -16,41 +16,66 @@
 <body>
 
     <!-- Menu header -->
-    <header>
-        <div class="container-fluid fixed-top">
+    <header class="d-none d-md-block">
+        <div class="container-fluid">
             <div class="container">
-            <div class="row">
-                <div class="col-sm-4 d-flex align-items-center">
-                    <a href="index.html"><img src="./images/logosonhali.png" style="width: 150px; height:80px;" alt="logo"></a>
-                </div>
-                <div class="col-sm-8 navbar navbar-dark d-flex justify-content-end align-items-center">
-                    <nav id="navbar">
-                        <ul class="d-flex list-unstyled">
-                            <li class="me-4"><a class="text-decoration-none text-light" href="#">Ana sayfa</a></li>
-                            <li class="me-4"><a class="text-decoration-none text-light" href="#">Hakkımızda</a></li>
-                            <li class="me-4"><a class="text-decoration-none text-light" href="#">Hizmetlerimiz</a></li>
-                            <li><a class="text-decoration-none text-light" href="#">İletişim</a></li>
-                        </ul>
-                    </nav>
+                <div class="row">
+                    <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-start">
+                        <a href="index.html"><img src="./images/logosonhali.png" style="width: 150px; height:80px;" alt="logo"></a>
+                    </div>
+                    <div class="col-lg-8 navbar navbar-dark d-flex justify-content-lg-end justify-content-center align-items-center">
+                        <nav id="menu">
+                            <ul class="d-flex list-unstyled">
+                                <li class="me-4"><a class="text-decoration-none text-light" href="#">Ana Sayfa</a></li>
+                                <li class="me-4"><a class="text-decoration-none text-light" href="#">Hakkımızda</a></li>
+                                <li class="me-4"><a class="text-decoration-none text-light" href="#">Hizmetlerimiz</a></li>
+                                <li><a class="text-decoration-none text-light" href="#">İletişim</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
     </header>
 
+
+    <!-- Mobil Menu Header -->
+    <nav>
+        <div class="container-fluid fixed-top mobil-menu d-md-none align-items-center">
+            <div class="row position-relative">
+                <div class="col-4 logo">
+                    <img src="./images/logosonhali.png" alt="logo">
+                </div>
+                <div class="col-8 d-flex align-self-center justify-content-end">
+                    <input type="checkbox" id="menuBtn">
+                    <label for="menuBtn" class="menuBtn">
+                        <i class="bi bi-list mobil-menu-icons me-2"></i>
+                    </label>
+                    <ul class="position-absolute">
+                        <li><a href="#">Ana Sayfa</a></li>
+                        <li><a href="#">Hakkımızda</a></li>
+                        <li><a href="#">Hizmetlerimiz</a></li>
+                        <li><a href="#">İletişim</a></li>
+                    </ul>
+                </div>                
+            </div>
+        </div>
+    </nav>
+
+
     <!-- hızlı randevu -->
-        <div class="container-fluid d-flex flex-column p-0 position-relative">
+        <div class="container-fluid d-flex flex-column p-0 position-relative justify-content-lg-center slider">
             <div class="resim opacity-100">
                 <img src="./images/slder.jpg" width="100%" height="700px" alt="silder">
             </div>
             <div class="container align-self-center position-absolute top-50">
                 <div class="row">
-                    <div class="col-md-8 text-light">
+                    <div class="col-lg-8 text-light">
                         <h1 style="font-size:3rem;">GENÇ BEYİNLER</h1>
                         <h4>Modern ve responsive tasarımlar için doğru yerdesiniz..</h4>
                         <h5>Kişiye ve kurumlara özel özgün, yenilikçi ve kullanıcı dostu web siteleri üretiyoruz.</h5>
                     </div>
-                    <div class="col-md-4 text-white d-flex flex-column p-0">
+                    <div class="col-lg-4 text-white d-flex flex-column p-0 d-none d-md-block">
                         <div class="randevu-icerik">
                             <div class="randevu">
                                 <div class="baslik">
@@ -93,28 +118,33 @@
             </div>
         </div>
 
+
         <!-- Ön bilgi -->
         <section>
-            <div class="container">
+            <div class="container aciklama">
                 <div class="row">
-                    <div style="height: 200px;" class="col-md-8 d-flex align-items-center pt-5">
-                        <div class="aciklama-resim">
-                            <img style="border-radius: 100%;" src="./images/aciklama.jpg" alt="web tasarım" width="200" height="200">
-                        </div>
-                        <div class="ps-4 aciklama-icerik d-flex align-items-center">
-                            <div class="cizgi pe-3"><hr></div>
-                            <div class="web-aciklama">
-                                <h2>Web Tasarım</h2>
-                                <p>Modern, işlevsel, mobil uyumlu, özgün, kullanıcı dostu, ekonomik, yenilikçi, profesyonel, stratejik, yükek geri dönüş ve başarı odaklı web tasarım projeleri üretiyoruz.</p>
+                    <div class="col-lg-8 d-flex align-items-center pt-5">
+                        <div class="row">
+                            <div class="aciklama-resim col-lg-4 d-flex justify-content-center justify-content-lg-end">
+                                <img style="border-radius: 100%;" src="./images/aciklama.jpg" alt="web tasarım">
+                            </div>
+                            <div class="ps-4 aciklama-icerik d-flex align-self-center col-lg-8 text-center text-lg-start mt-3">
+                                <div class="cizgi pe-3 d-none d-lg-block"><hr></div>
+                                <div class="web-aciklama">
+                                    <h2>Neler yapıyoruz ?</h2>
+                                    <p>Modern, işlevsel, mobil uyumlu, özgün, kullanıcı dostu, ekonomik, yenilikçi, profesyonel, stratejik, yükek geri dönüş ve başarı odaklı web tasarım projeleri üretiyoruz.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
         <!-- section içerik 1 -->
         <section>
-            <div class="container mt-5 pb-5 pt-5 text-center ">
+            <div class="container mt-lg-5 pb-5 pt-lg-5 text-center">
                 <div class="row mt-5">
                     <div class="col-md-3 web d-flex flex-column align-items-center">                       
                         <div class="on-icerik-icon position-relative"><img class="ilk-once" src="./images/kullanıcı-dostu.png" width="70">
@@ -155,31 +185,44 @@
                 </div>
             </div>
         </section>
+
+
+        <!-- ikinci içerik -->
         <section>
             <div class="container ikinci-icerik">
                 <div class="row">
-                    <div class="col-md-6 p-0">
-                        <img src="./images/ikinci-icerik-foto.png" alt="web tasarım" width="660" height="500">
+                    <div class="col-xl-6 p-0 resim d-flex align-items-center">
+                        <img src="./images/ikinci-icerik-foto.png" alt="web tasarım">
                     </div>
-                    <div class="col-md-6 ">
+                    <div class="col-xl-6 d-flex flex-column align-items-center p-5 mt-4">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-sm-6 text-center text-md-start">
                             <h5>Hayal Gücü</h5>
                             <p>Web sitenizi alışılmışın dışında tamamen farklı özgün tasarım ve özgün içerik ile tasarlıyoruz.</p> 
                             </div>
-                            <div class="col-md-6">
-                            <h5>Hayal Gücü</h5>
-                            <p>Web sitenizi alışılmışın dışında tamamen farklı özgün tasarım ve özgün içerik ile tasarlıyoruz.</p> 
+                            <div class="col-sm-6 text-center text-md-start">
+                            <h5>Temiz Kodlama</h5>
+                            <p> Web sitenizde bilinen karmaşık kodlamaların aksine çok sade ve web dostu kodlama yapıyoruz.</p> 
+                            </div>
+                        </div>
+                        <div class="row md-5">
+                            <div class="col-sm-6 text-center text-md-start">
+                            <h5>Web Standartları</h5>
+                            <p>Tüm tasarım, altyapı ve kodlama aşamalarını web standartlarına uygun olarak yapıyoruz.</p> 
+                            </div>
+                            <div class="col-sm-6 text-center text-md-start">
+                            <h5>Yayınlama</h5>
+                            <p>Tüm Çalışmalar ve Kontroller Tamamlandıktan Sonra Onayınıza sunulur ve Yayınları.</p> 
                             </div>
                         </div>
                         <div class="row mt-5">
-                            <div class="col-md-6">
-                            <h5>Hayal Gücü</h5>
-                            <p>Web sitenizi alışılmışın dışında tamamen farklı özgün tasarım ve özgün içerik ile tasarlıyoruz.</p> 
+                            <div class="col-sm-6 text-center text-md-start">
+                            <h5>Görsel Tasarım</h5>
+                            <p>Tüm tasarım, altyapı ve kodlama aşamalarını web standartlarına uygun olarak yapıyoruz.</p> 
                             </div>
-                            <div class="col-md-6">
-                            <h5>Hayal Gücü</h5>
-                            <p>Web sitenizi alışılmışın dışında tamamen farklı özgün tasarım ve özgün içerik ile tasarlıyoruz.</p> 
+                            <div class="col-sm-6 text-center text-md-start">
+                            <h5>Ücretsiz Destek</h5>
+                            <p>Bizden aldığınız her türlü hizmet süresince yanınızdayız. Her an destek alabilmeniz için 7/24 buradayız.</p> 
                             </div>
                         </div>
                     </div>
@@ -188,10 +231,11 @@
             </div>
         </section>
 
+
         <!-- footer alt kısım -->
         <footer>
-            <div class="container-fluid mt-5">     
-                <div class="container mt-5 pt-5">
+            <div class="container-fluid mt-5 text-center text-md-start">                     
+                <div class="container mt-5">
                     <div class="row">
                         <div class="col-md-3 footer-digital text-light">
                             <a href="index.html"><img src="./images/logosonhali.png" style="width: 150px; height:80px;" alt="logo"></a>
@@ -216,12 +260,12 @@
                         </div>
                         <div class="col-md-3 footer-digital ulasim text-light p-3">
                             <h4>Bize ulaşın</h4>
-                            <ul class="list-unstyled">
-                                <li class="d-flex align-items-center"><i class="bi bi-telephone-fill pe-1 pb-2 footer-icons"></i><h6>Telefon</h6></li>
+                            <ul class="list-unstyled d-flex flex-column justify-content-center">
+                                <li class="d-flex align-items-center justify-content-center justify-content-md-start"><i class="bi bi-telephone-fill pe-1 pb-2 footer-icons"></i><h6>Telefon</h6></li>
                                 <li class="ulasim-items ps-0"><p>0542 798 20 78</p></li>
-                                <li class="d-flex align-items-center"><i class="bi bi-telephone-fill pe-1 pb-2 footer-icons"></i><h6>Telefon</h6></li>
+                                <li class="d-flex align-items-center justify-content-center justify-content-md-start"><i class="bi bi-telephone-fill pe-1 pb-2 footer-icons"></i><h6>Telefon</h6></li>
                                 <li class="ulasim-items ps-0"><p>0542 798 20 78</p></li>
-                                <li class="d-flex align-items-center"><i class="bi bi-envelope-fill pe-1 pb-2 footer-icons"></i><h6>E-Mail Adresi</h6></li>
+                                <li class="d-flex align-items-center justify-content-center justify-content-md-start"><i class="bi bi-envelope-fill pe-1 pb-2 footer-icons"></i><h6>E-Mail Adresi</h6></li>
                                 <li class="ulasim-items ps-0"><p>hamdismailkskn98@gmail.com</p></li>
                             </ul>
                         </div>
@@ -238,14 +282,15 @@
             </div>
         </footer>
 
+
         <!-- footer 2 haklar -->
             <div class="container-fluid footer-haklar">
                 <div class="container">
-                    <div class="row d-flex">
+                    <div class="row d-flex text-center text-md-start">
                         <div class="col-md-6 text-secondary mb-4">                       
                             <p>Copyright © 2021 - 2022 Meto Yazılım Tüm Hakları Saklıdır.</p>
                         </div>
-                        <div class="col-md-6 text-secondary mb-4 text-end">
+                        <div class="col-md-6 text-secondary mb-4 text-md-end">
                             <p><a href="#"> K.V.K.K. </a> | <a href="#"> Çerez Politikası </a> | <a href="#"> Mesafeli Satış Sözleşmesi </a></p>
                         </div>
                     </div>

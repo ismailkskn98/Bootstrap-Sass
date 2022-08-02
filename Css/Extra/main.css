@@ -1,3 +1,75 @@
+@media (min-width: 768px) and (max-width: 992px) {
+  .randevu-icerik {
+    margin-top: 2rem;
+  }
+  .slider {
+    margin-bottom: 8rem;
+  }
+  .aciklama {
+    margin-top: 25rem;
+    margin-bottom: 1rem;
+  }
+  .aciklama .aciklama-resim img {
+    width: 40%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .aciklama .aciklama-resim img {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .mobil-menu {
+    background-color: #222222;
+  }
+  .mobil-menu .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  .mobil-menu ul {
+    position: fixed;
+    margin-top: 7rem;
+    background-color: #222222;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    left: -100%;
+    top: 0;
+    transition: all 0.5s;
+    padding: 0;
+  }
+  .mobil-menu ul li {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  .mobil-menu ul li a {
+    color: white;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 1rem;
+    width: 100%;
+    transition: all 0.5s;
+  }
+  .mobil-menu ul li a:hover {
+    background-color: #018BD3;
+  }
+  .mobil-menu .mobil-menu-icons {
+    font-size: 3rem;
+    color: #018BD3;
+  }
+  .mobil-menu #menuBtn {
+    display: none;
+  }
+  .mobil-menu #menuBtn:checked ~ ul {
+    left: 0;
+  }
+}
 * {
   font-family: "Open Sans", sans-serif;
 }
@@ -18,12 +90,12 @@ a {
 header .container-fluid {
   background-color: #222222;
 }
-header .container-fluid .container #navbar ul a {
+header .container-fluid .container #menu ul a {
   padding: 0.5rem;
   transition: all 0.5s ease-in-out;
   border-bottom: 2px solid #222222;
 }
-header .container-fluid .container #navbar ul a:hover {
+header .container-fluid .container #menu ul a:hover {
   border-bottom: 2px solid #018BD3;
   border-radius: 9px;
   padding: 0.5rem;
@@ -106,7 +178,11 @@ header .container-fluid .container #navbar ul a:hover {
   color: white;
 }
 
-.aciklama-icerik hr {
+.aciklama .aciklama-resim img {
+  max-width: 70%;
+  height: auto;
+}
+.aciklama .aciklama-icerik hr {
   border: none;
   border-left: 1px solid black;
   height: 5.5rem;
@@ -163,12 +239,17 @@ section .container .row .on-icerik-yazi .cizgi hr {
 .ikinci-icerik:hover {
   background: rgb(247, 247, 247);
 }
+.ikinci-icerik .resim img {
+  max-width: 100%;
+  height: auto;
+}
 
 footer {
   background-color: #222222;
 }
 footer .container-fluid {
   background: url("/images/footerlogo.png") no-repeat center center;
+  border-top: 2px solid #018BD3;
 }
 footer .container-fluid h4 {
   padding-bottom: 0.75rem;
