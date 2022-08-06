@@ -17,6 +17,7 @@ a{
 header{
     .container-fluid{
         background-color: #222222;
+        height: 120px;
         .container{
             #menu{
                 ul{
@@ -24,6 +25,7 @@ header{
                         padding: 0.5rem;
                         transition: all .5s ease-in-out;
                         border-bottom: 2px solid #222222;
+                        font-size: 1rem;
                         &:hover{
                             border-bottom: 2px solid #018BD3;
                             border-radius: 9px;
