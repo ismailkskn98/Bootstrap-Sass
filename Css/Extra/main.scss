@@ -1,4 +1,3 @@
-@import 'mobil';
 *{
     font-family: 'Open Sans', sans-serif;
 }
@@ -13,6 +12,8 @@ h1,h2,h3,h4,h5,h6{
 a{
     text-decoration: none;
 }
+
+// menu header
 header{
     .container-fluid{
         background-color: #222222;
@@ -188,17 +189,25 @@ section{
 }
 
 // ikinci-icerik
-.ikinci-icerik{
-    transition: all .5s ease-in-out;
-    &:hover{
-        background: rgb(247, 247, 247);
-    }
+.ikinci-icerik{    
+    border-bottom: 4px solid #018BD3;
+    border-radius: 10%;
     .resim{
         img{
             max-width: 100%;
             height: auto;
         }
     }
+    .baslik{
+        padding-bottom: 1rem; 
+        padding-top: 0.5rem; 
+        img{
+            width: 25%;
+            padding-right: 0.75rem;
+            height: auto;
+        }
+    }
+
 }
 
 
@@ -211,12 +220,13 @@ footer{
         h4{
             padding-bottom: 0.75rem;
         }
-        .footer-digital{
+        .footer-digital{           
             .hizmet-hakkinda-items, .ulasim-items{
                 padding: 0.5rem;
                 font-size: 0.8rem;
+                color: #bcc4c9;
                 a,p{
-                    color: #dedede;
+                    color: #bcc4c9;
                 }
             }
             .hizmet-hakkinda-items{
@@ -239,6 +249,7 @@ footer{
                 p{font-size: 0.8rem;}                
             }
             .footer-icons{
+                color: #bcc4c9;
                 font-size: 0.8rem;
             }
         }
@@ -251,7 +262,7 @@ footer{
             -webkit-transform: translate(1rem);    
             }
             a{
-            color: white;
+            color: #bcc4c9;
             font-size: 0.9rem;
             transition: all .4s ease-in-out;
             display: inline-block;
@@ -282,7 +293,7 @@ footer{
     }
 }
 
-
+// footer haklar
 .footer-haklar{
     background-color: #222222;
     a{
@@ -290,7 +301,10 @@ footer{
         color: #6c747a;
         transition: all .2s ease-in-out;
         &:hover{
-            color: #bbbcbf;
+            color: #bcc4c9;
         }
     }
 }
+
+// mobil css
+@import 'mobil';

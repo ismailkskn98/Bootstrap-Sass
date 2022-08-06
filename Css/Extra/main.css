@@ -1,75 +1,3 @@
-@media (min-width: 768px) and (max-width: 992px) {
-  .randevu-icerik {
-    margin-top: 2rem;
-  }
-  .slider {
-    margin-bottom: 8rem;
-  }
-  .aciklama {
-    margin-top: 25rem;
-    margin-bottom: 1rem;
-  }
-  .aciklama .aciklama-resim img {
-    width: 40%;
-    height: auto;
-  }
-}
-@media (max-width: 768px) {
-  .aciklama .aciklama-resim img {
-    width: 50%;
-  }
-}
-@media (max-width: 768px) {
-  .mobil-menu {
-    background-color: #222222;
-  }
-  .mobil-menu .logo img {
-    max-width: 100%;
-    height: auto;
-  }
-  .mobil-menu ul {
-    position: fixed;
-    margin-top: 7rem;
-    background-color: #222222;
-    width: 100%;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    list-style: none;
-    left: -100%;
-    top: 0;
-    transition: all 0.5s;
-    padding: 0;
-  }
-  .mobil-menu ul li {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-  }
-  .mobil-menu ul li a {
-    color: white;
-    font-size: 1.2rem;
-    display: inline-block;
-    padding: 1rem;
-    width: 100%;
-    transition: all 0.5s;
-  }
-  .mobil-menu ul li a:hover {
-    background-color: #018BD3;
-  }
-  .mobil-menu .mobil-menu-icons {
-    font-size: 3rem;
-    color: #018BD3;
-  }
-  .mobil-menu #menuBtn {
-    display: none;
-  }
-  .mobil-menu #menuBtn:checked ~ ul {
-    left: 0;
-  }
-}
 * {
   font-family: "Open Sans", sans-serif;
 }
@@ -234,13 +162,20 @@ section .container .row .on-icerik-yazi .cizgi hr {
 }
 
 .ikinci-icerik {
-  transition: all 0.5s ease-in-out;
-}
-.ikinci-icerik:hover {
-  background: rgb(247, 247, 247);
+  border-bottom: 4px solid #018BD3;
+  border-radius: 10%;
 }
 .ikinci-icerik .resim img {
   max-width: 100%;
+  height: auto;
+}
+.ikinci-icerik .baslik {
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+.ikinci-icerik .baslik img {
+  width: 25%;
+  padding-right: 0.75rem;
   height: auto;
 }
 
@@ -257,9 +192,10 @@ footer .container-fluid h4 {
 footer .container-fluid .footer-digital .hizmet-hakkinda-items, footer .container-fluid .footer-digital .ulasim-items {
   padding: 0.5rem;
   font-size: 0.8rem;
+  color: #bcc4c9;
 }
 footer .container-fluid .footer-digital .hizmet-hakkinda-items a, footer .container-fluid .footer-digital .hizmet-hakkinda-items p, footer .container-fluid .footer-digital .ulasim-items a, footer .container-fluid .footer-digital .ulasim-items p {
-  color: #dedede;
+  color: #bcc4c9;
 }
 footer .container-fluid .footer-digital .hizmet-hakkinda-items {
   transition: all 0.4s ease-in-out;
@@ -279,6 +215,7 @@ footer .container-fluid .ulasim .ulasim-items p {
   font-size: 0.8rem;
 }
 footer .container-fluid .ulasim .footer-icons {
+  color: #bcc4c9;
   font-size: 0.8rem;
 }
 footer .sosyal li {
@@ -289,7 +226,7 @@ footer .sosyal li:hover {
   -webkit-transform: translate(1rem);
 }
 footer .sosyal li a {
-  color: white;
+  color: #bcc4c9;
   font-size: 0.9rem;
   transition: all 0.4s ease-in-out;
   display: inline-block;
@@ -314,5 +251,102 @@ footer .sosyal .face a:hover {
   transition: all 0.2s ease-in-out;
 }
 .footer-haklar a:hover {
-  color: #bbbcbf;
+  color: #bcc4c9;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .randevu-icerik {
+    margin-top: 2rem;
+  }
+  .slider {
+    margin-bottom: 8rem;
+  }
+  .aciklama {
+    margin-top: 25rem;
+    margin-bottom: 1rem;
+  }
+  .aciklama .aciklama-resim img {
+    width: 40%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .aciklama .aciklama-resim img {
+    width: 50%;
+  }
+  .ikinci-icerik {
+    border: 0;
+  }
+  .ikinci-icerik .baslik {
+    justify-content: center;
+  }
+  .ikinci-icerik .ikinci-icerik-items {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .mobil-menu {
+    background-color: #222222;
+  }
+  .mobil-menu .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  .mobil-menu ul {
+    position: fixed;
+    background-color: #222222;
+    margin-top: 7rem;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    left: -100%;
+    top: 0;
+    transition: all 0.5s;
+    padding: 0;
+  }
+  .mobil-menu ul li {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  .mobil-menu ul li a {
+    color: white;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 1rem;
+    width: 100%;
+    transition: all 0.5s;
+  }
+  .mobil-menu ul li a:hover {
+    background-color: #018BD3;
+  }
+  .mobil-menu .mobil-menu-icons {
+    font-size: 3rem;
+    color: #018BD3;
+  }
+  .mobil-menu #menuBtn {
+    display: none;
+  }
+  .mobil-menu #menuBtn:checked ~ ul {
+    left: 0;
+  }
+}
+@media (max-width: 650px) {
+  .mobil-menu ul {
+    margin-top: 6rem;
+  }
+}
+@media (max-width: 575px) {
+  .mobil-menu ul {
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .mobil-menu ul {
+    margin-top: 4rem;
+  }
 }/*# sourceMappingURL=main.css.map */
