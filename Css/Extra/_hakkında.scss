@@ -18,12 +18,21 @@
         }
     }
     .hakkinda-cizgi{
-        background: #018BD3;
-        border-radius: 100%;
+        background-color: blue;
         width: 120px;
         height: 120px;
-        bottom: -4rem;
-        right:1.5rem;
+        border-radius: 100%;
+        bottom: -3.5rem;
+        right: 0;
+        .harf{
+            left: 1.5rem;
+            top: 1.2rem;
+            color: white;
+            h1{
+                font-size: 4rem;
+                font-family: 'BhuTuka Expanded One', cursive;
+            }
+        }
     }
 }
 .hakkında{
