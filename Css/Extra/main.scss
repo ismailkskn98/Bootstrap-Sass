@@ -16,17 +16,19 @@ a{
 // menu header
 header{
     .container-fluid{
-        background-color: #222222;
+        background: -webkit-linear-gradient(left bottom, #222222,#222222,#222222,#003b5a,#222222); 
         height: 120px;
         .container{
             #menu{
                 ul{
                     a{
                         padding: 0.5rem;
-                        transition: all .5s ease-in-out;
-                        border-bottom: 2px solid #222222;
+                        border-bottom: 2px solid rgba(0, 0, 0, 0);
                         font-size: 1rem;
+                        color: rgb(255, 255, 255);
+                        transition: all .3s ease-in-out;
                         &:hover{
+                            color: #cccccc;
                             border-bottom: 2px solid #018BD3;
                             border-radius: 9px;
                             padding: 0.5rem;

@@ -17,16 +17,18 @@ a {
 }
 
 header .container-fluid {
-  background-color: #222222;
+  background: -webkit-linear-gradient(left bottom, #222222, #222222, #222222, #003b5a, #222222);
   height: 120px;
 }
 header .container-fluid .container #menu ul a {
   padding: 0.5rem;
-  transition: all 0.5s ease-in-out;
-  border-bottom: 2px solid #222222;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
   font-size: 1rem;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-in-out;
 }
 header .container-fluid .container #menu ul a:hover {
+  color: #cccccc;
   border-bottom: 2px solid #018BD3;
   border-radius: 9px;
   padding: 0.5rem;
@@ -258,7 +260,7 @@ footer .sosyal .face a:hover {
 }
 
 .harita {
-  background-color: #222222;
+  background: -webkit-linear-gradient(left bottom, #222222, #222222, #222222, #003b5a, #222222);
 }
 .harita h2 {
   color: white;
@@ -276,12 +278,16 @@ footer .sosyal .face a:hover {
   padding-right: 1rem;
 }
 .harita .hakkinda-cizgi {
-  background-color: blue;
+  background-color: #222222;
   width: 120px;
   height: 120px;
   border-radius: 100%;
   bottom: -3.5rem;
   right: 0;
+  transition: all 0.4s;
+}
+.harita .hakkinda-cizgi:hover {
+  background-color: #003b5a;
 }
 .harita .hakkinda-cizgi .harf {
   left: 1.5rem;
@@ -295,6 +301,7 @@ footer .sosyal .face a:hover {
 
 .hakkında .sidebar ul {
   list-style: none;
+  padding: 0;
 }
 .hakkında .sidebar ul .sidebar-items li {
   border-bottom: 2px dashed rgb(156, 143, 143);
@@ -311,8 +318,9 @@ footer .sosyal .face a:hover {
   color: #018BD3;
 }
 .hakkında .hakkinda-resim img {
-  max-width: 100%;
-  margin-bottom: 4rem;
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 2rem;
   border-radius: 3px;
 }
 .hakkında .hakkinda-icerik h3 {
