@@ -16,22 +16,50 @@ a {
   text-decoration: none;
 }
 
-header .container-fluid {
-  background: -webkit-linear-gradient(left bottom, #222222, #222222, #222222, #003b5a, #222222);
-  height: 120px;
+header {
+  width: 100%;
+  transition: 0.6s;
+  z-index: 100000;
 }
-header .container-fluid .container #menu ul a {
-  padding: 0.5rem;
-  border-bottom: 2px solid rgba(0, 0, 0, 0);
-  font-size: 1rem;
-  color: rgb(255, 255, 255);
-  transition: all 0.3s ease-in-out;
+header li {
+  list-style: none;
 }
-header .container-fluid .container #menu ul a:hover {
-  color: #cccccc;
-  border-bottom: 2px solid #018BD3;
-  border-radius: 9px;
-  padding: 0.5rem;
+header li a {
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+  font-size: 0.9rem;
+}
+header .logo img {
+  transition: 0.6s;
+  max-width: 50%;
+  height: auto;
+}
+
+header.sticky {
+  background-color: #222222;
+}
+header.sticky .logo img {
+  transition: 0.6s;
+  max-width: 35%;
+}
+header.sticky li a {
+  font-size: 0.8rem;
+}
+
+.navbar {
+  background: #222222;
+}
+
+.nav-item a {
+  color: #222222;
+  transition: all 0.5s ease-in-out;
+}
+.nav-item a:hover {
+  background-color: #018BD3;
 }
 
 .randevu-icerik {
@@ -166,10 +194,21 @@ section .container .row .on-icerik-yazi .cizgi hr {
   width: 10rem;
 }
 
-.ikinci-icerik {
-  border-bottom: 4px solid #018BD3;
-  border-radius: 10%;
+.basliklar h2 {
+  display: inline;
+  font-family: "Montserrat", sans-serif;
 }
+.basliklar p {
+  color: #939393;
+  padding-top: 1rem;
+}
+.basliklar .baslik-cizgi {
+  margin-top: 3rem;
+  background-color: #018BD3;
+  width: 40px;
+  height: 3px;
+}
+
 .ikinci-icerik .resim img {
   max-width: 100%;
   height: auto;
@@ -188,8 +227,8 @@ footer {
   background-color: #222222;
 }
 footer .container-fluid {
-  background: url("/images/footerlogo.png") no-repeat center center;
   border-top: 2px solid #018BD3;
+  padding-top: 1.7rem;
 }
 footer .container-fluid h4 {
   padding-bottom: 0.75rem;
@@ -355,71 +394,5 @@ footer .sosyal .face a:hover {
   }
   .ikinci-icerik .ikinci-icerik-items {
     margin-bottom: 1rem;
-  }
-}
-@media (max-width: 768px) {
-  .mobil-menu {
-    background-color: #222222;
-  }
-  .mobil-menu .logo img {
-    max-width: 100%;
-    height: auto;
-  }
-  .mobil-menu ul {
-    position: fixed;
-    background-color: #222222;
-    margin-top: 7rem;
-    width: 100%;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    list-style: none;
-    left: -100%;
-    top: 0;
-    transition: all 0.5s;
-    padding: 0;
-  }
-  .mobil-menu ul li {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-  }
-  .mobil-menu ul li a {
-    color: white;
-    font-size: 1.2rem;
-    display: inline-block;
-    padding: 1rem;
-    width: 100%;
-    transition: all 0.5s;
-  }
-  .mobil-menu ul li a:hover {
-    background-color: #018BD3;
-  }
-  .mobil-menu .mobil-menu-icons {
-    font-size: 3rem;
-    color: #018BD3;
-  }
-  .mobil-menu #menuBtn {
-    display: none;
-  }
-  .mobil-menu #menuBtn:checked ~ ul {
-    left: 0;
-  }
-}
-@media (max-width: 650px) {
-  .mobil-menu ul {
-    margin-top: 6rem;
-  }
-}
-@media (max-width: 575px) {
-  .mobil-menu ul {
-    margin-top: 5rem;
-  }
-}
-@media (max-width: 500px) {
-  .mobil-menu ul {
-    margin-top: 4rem;
   }
 }/*# sourceMappingURL=main.css.map */

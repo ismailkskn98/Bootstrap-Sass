@@ -15,31 +15,55 @@ a{
 
 // menu header
 header{
-    .container-fluid{
-        background: -webkit-linear-gradient(left bottom, #222222,#222222,#222222,#003b5a,#222222); 
-        height: 120px;
-        .container{
-            #menu{
-                ul{
-                    a{
-                        padding: 0.5rem;
-                        border-bottom: 2px solid rgba(0, 0, 0, 0);
-                        font-size: 1rem;
-                        color: rgb(255, 255, 255);
-                        transition: all .3s ease-in-out;
-                        &:hover{
-                            color: #cccccc;
-                            border-bottom: 2px solid #018BD3;
-                            border-radius: 9px;
-                            padding: 0.5rem;
-                        }
-                    }
-                }
-            }
+    width: 100%;
+    transition: 0.6s;
+    z-index: 100000;
+    li{
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            letter-spacing: 2px;
+            font-weight: 500px;
+            transition: 0.6s;
+            font-size: 0.9rem;
+        }
+    }
+    .logo{
+        img{
+            transition: 0.6s;
+            max-width: 50%;
+            height: auto;
         }
     }
 }
-
+header.sticky{
+    background-color: #222222;
+    .logo{
+        img{
+            transition: 0.6s;
+            max-width: 35%;
+        }
+    }
+    li{
+        a{
+            font-size: 0.8rem;
+        }
+    }
+}
+.navbar{
+    background: #222222;
+}
+.nav-item{
+    a{
+        color: #222222;
+        transition: all .5s ease-in-out;
+        &:hover{
+            background-color: #018BD3;
+        }
+    }
+}
 // randevu
 .randevu-icerik{
     background-color: #222222;
@@ -191,12 +215,26 @@ section{
         }
     }
 }
+.basliklar{
+    h2{
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    }
+    p{
+        color: #939393;
+        padding-top: 1rem;
+    }
+    .baslik-cizgi{
+        margin-top: 3rem;
+        background-color: #018BD3;
+        width: 40px;
+        height: 3px;
+    }
+}
 
 // ikinci-icerik
 .ikinci-icerik{    
-    border-bottom: 4px solid #018BD3;
-    border-radius: 10%;
-    .resim{
+    .resim{        
         img{
             max-width: 100%;
             height: auto;
@@ -219,8 +257,8 @@ section{
 footer{
     background-color: #222222;
     .container-fluid{
-        background:url('/images/footerlogo.png') no-repeat center center;
         border-top: 2px solid #018BD3;
+        padding-top: 1.70rem;
         h4{
             padding-bottom: 0.75rem;
         }
@@ -309,6 +347,18 @@ footer{
         }
     }
 }
+// .yukariButon{
+//     width: 60px;
+//     height: 60px;
+//     border-radius: 100%;
+//     margin-bottom: 4rem;
+//     margin-right: 4rem;
+//     background-color: #0176b4;
+//     a{
+//         font-size: 3rem;
+//         color: #fff;
+//     }
+// }
 
 // hakkında css
 @import 'hakkında';
