@@ -3,7 +3,7 @@
 }
 p, a{
     font-size: 0.9rem;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.1px;
 
 }
 h1,h2,h3,h4,h5,h6{
@@ -12,28 +12,58 @@ h1,h2,h3,h4,h5,h6{
 a{
     text-decoration: none;
 }
+
+// menu header
 header{
-    .container-fluid{
-        background-color: #222222;
-        .container{
-            #navbar{
-                ul{
-                    a{
-                        padding: 0.5rem;
-                        transition: all .5s ease-in-out;
-                        border-bottom: 2px solid #222222;
-                        &:hover{
-                            border-bottom: 2px solid #018BD3;
-                            border-radius: 9px;
-                            padding: 0.5rem;
-                        }
-                    }
-                }
-            }
+    width: 100%;
+    transition: 0.6s;
+    z-index: 100000;
+    li{
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            letter-spacing: 2px;
+            font-weight: 500px;
+            transition: 0.6s;
+            font-size: 0.9rem;
+        }
+    }
+    .logo{
+        img{
+            transition: 0.6s;
+            max-width: 50%;
+            height: auto;
         }
     }
 }
-
+header.sticky{
+    background-color: #222222;
+    .logo{
+        img{
+            transition: 0.6s;
+            max-width: 35%;
+        }
+    }
+    li{
+        a{
+            font-size: 0.8rem;
+        }
+    }
+}
+.navbar{
+    background: #222222;
+}
+.nav-item{
+    a{
+        color: #222222;
+        transition: all .5s ease-in-out;
+        &:hover{
+            background-color: #018BD3;
+        }
+    }
+}
 // randevu
 .randevu-icerik{
     background-color: #222222;
@@ -116,12 +146,20 @@ header{
 
 
 // giris aciklama
-.aciklama-icerik{
-    hr{     
-        border: none;
-        border-left: 1px solid black;
-        height: 5.5rem;
-        width: 1px;       
+.aciklama{
+    .aciklama-resim{
+        img{
+            max-width: 70%;
+            height: auto;
+        }
+    }
+    .aciklama-icerik{
+        hr{     
+            border: none;
+            border-left: 1px solid black;
+            height: 5.5rem;
+            width: 1px;       
+        }
     }
 }
 
@@ -177,21 +215,60 @@ section{
         }
     }
 }
+.basliklar{
+    h2{
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    }
+    p{
+        color: #939393;
+        padding-top: 1rem;
+    }
+    .baslik-cizgi{
+        margin-top: 3rem;
+        background-color: #018BD3;
+        width: 40px;
+        height: 3px;
+    }
+}
+
+// ikinci-icerik
+.ikinci-icerik{    
+    .resim{        
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .baslik{
+        padding-bottom: 1rem; 
+        padding-top: 0.5rem; 
+        img{
+            width: 25%;
+            padding-right: 0.75rem;
+            height: auto;
+        }
+    }
+
+}
+
 
 // footer
 footer{
     background-color: #222222;
     .container-fluid{
-        background:url('/images/footerlogo.png') no-repeat center center;
+        border-top: 2px solid #018BD3;
+        padding-top: 1.70rem;
         h4{
             padding-bottom: 0.75rem;
         }
-        .footer-digital{
+        .footer-digital{           
             .hizmet-hakkinda-items, .ulasim-items{
                 padding: 0.5rem;
                 font-size: 0.8rem;
+                color: #bcc4c9;
                 a,p{
-                    color: #dedede;
+                    color: #bcc4c9;
                 }
             }
             .hizmet-hakkinda-items{
@@ -210,9 +287,12 @@ footer{
         }
         .ulasim{
             .ulasim-items{
-                margin-top: -1rem;
-                p{font-size: 0.8rem;}
-                
+                margin-top: -1rem;             
+                p{font-size: 0.8rem;}                
+            }
+            .footer-icons{
+                color: #bcc4c9;
+                font-size: 0.8rem;
             }
         }
     }
@@ -224,7 +304,7 @@ footer{
             -webkit-transform: translate(1rem);    
             }
             a{
-            color: white;
+            color: #bcc4c9;
             font-size: 0.9rem;
             transition: all .4s ease-in-out;
             display: inline-block;
@@ -255,7 +335,7 @@ footer{
     }
 }
 
-
+// footer haklar
 .footer-haklar{
     background-color: #222222;
     a{
@@ -263,7 +343,25 @@ footer{
         color: #6c747a;
         transition: all .2s ease-in-out;
         &:hover{
-            color: #bbbcbf;
+            color: #bcc4c9;
         }
     }
 }
+// .yukariButon{
+//     width: 60px;
+//     height: 60px;
+//     border-radius: 100%;
+//     margin-bottom: 4rem;
+//     margin-right: 4rem;
+//     background-color: #0176b4;
+//     a{
+//         font-size: 3rem;
+//         color: #fff;
+//     }
+// }
+
+// hakkında css
+@import 'hakkında';
+
+// mobil css
+@import 'mobil';

@@ -1,10 +1,11 @@
+@charset "UTF-8";
 * {
   font-family: "Open Sans", sans-serif;
 }
 
 p, a {
   font-size: 0.9rem;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.1px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,18 +16,50 @@ a {
   text-decoration: none;
 }
 
-header .container-fluid {
+header {
+  width: 100%;
+  transition: 0.6s;
+  z-index: 100000;
+}
+header li {
+  list-style: none;
+}
+header li a {
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+  font-size: 0.9rem;
+}
+header .logo img {
+  transition: 0.6s;
+  max-width: 50%;
+  height: auto;
+}
+
+header.sticky {
   background-color: #222222;
 }
-header .container-fluid .container #navbar ul a {
-  padding: 0.5rem;
-  transition: all 0.5s ease-in-out;
-  border-bottom: 2px solid #222222;
+header.sticky .logo img {
+  transition: 0.6s;
+  max-width: 35%;
 }
-header .container-fluid .container #navbar ul a:hover {
-  border-bottom: 2px solid #018BD3;
-  border-radius: 9px;
-  padding: 0.5rem;
+header.sticky li a {
+  font-size: 0.8rem;
+}
+
+.navbar {
+  background: #222222;
+}
+
+.nav-item a {
+  color: #222222;
+  transition: all 0.5s ease-in-out;
+}
+.nav-item a:hover {
+  background-color: #018BD3;
 }
 
 .randevu-icerik {
@@ -106,7 +139,11 @@ header .container-fluid .container #navbar ul a:hover {
   color: white;
 }
 
-.aciklama-icerik hr {
+.aciklama .aciklama-resim img {
+  max-width: 70%;
+  height: auto;
+}
+.aciklama .aciklama-icerik hr {
   border: none;
   border-left: 1px solid black;
   height: 5.5rem;
@@ -157,11 +194,41 @@ section .container .row .on-icerik-yazi .cizgi hr {
   width: 10rem;
 }
 
+.basliklar h2 {
+  display: inline;
+  font-family: "Montserrat", sans-serif;
+}
+.basliklar p {
+  color: #939393;
+  padding-top: 1rem;
+}
+.basliklar .baslik-cizgi {
+  margin-top: 3rem;
+  background-color: #018BD3;
+  width: 40px;
+  height: 3px;
+}
+
+.ikinci-icerik .resim img {
+  max-width: 100%;
+  height: auto;
+}
+.ikinci-icerik .baslik {
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+.ikinci-icerik .baslik img {
+  width: 25%;
+  padding-right: 0.75rem;
+  height: auto;
+}
+
 footer {
   background-color: #222222;
 }
 footer .container-fluid {
-  background: url("/images/footerlogo.png") no-repeat center center;
+  border-top: 2px solid #018BD3;
+  padding-top: 1.7rem;
 }
 footer .container-fluid h4 {
   padding-bottom: 0.75rem;
@@ -169,9 +236,10 @@ footer .container-fluid h4 {
 footer .container-fluid .footer-digital .hizmet-hakkinda-items, footer .container-fluid .footer-digital .ulasim-items {
   padding: 0.5rem;
   font-size: 0.8rem;
+  color: #bcc4c9;
 }
 footer .container-fluid .footer-digital .hizmet-hakkinda-items a, footer .container-fluid .footer-digital .hizmet-hakkinda-items p, footer .container-fluid .footer-digital .ulasim-items a, footer .container-fluid .footer-digital .ulasim-items p {
-  color: #dedede;
+  color: #bcc4c9;
 }
 footer .container-fluid .footer-digital .hizmet-hakkinda-items {
   transition: all 0.4s ease-in-out;
@@ -190,6 +258,10 @@ footer .container-fluid .ulasim .ulasim-items {
 footer .container-fluid .ulasim .ulasim-items p {
   font-size: 0.8rem;
 }
+footer .container-fluid .ulasim .footer-icons {
+  color: #bcc4c9;
+  font-size: 0.8rem;
+}
 footer .sosyal li {
   transition: all 0.4s ease-in-out;
 }
@@ -198,7 +270,7 @@ footer .sosyal li:hover {
   -webkit-transform: translate(1rem);
 }
 footer .sosyal li a {
-  color: white;
+  color: #bcc4c9;
   font-size: 0.9rem;
   transition: all 0.4s ease-in-out;
   display: inline-block;
@@ -223,5 +295,104 @@ footer .sosyal .face a:hover {
   transition: all 0.2s ease-in-out;
 }
 .footer-haklar a:hover {
-  color: #bbbcbf;
+  color: #bcc4c9;
+}
+
+.harita {
+  background: -webkit-linear-gradient(left bottom, #222222, #222222, #222222, #003b5a, #222222);
+}
+.harita h2 {
+  color: white;
+}
+.harita .breadcrumb li {
+  color: rgb(156, 143, 143);
+}
+.harita .breadcrumb li + li::before {
+  content: "/ ";
+  padding-right: 0.5rem;
+}
+.harita .breadcrumb a {
+  color: white;
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+.harita .hakkinda-cizgi {
+  background-color: #222222;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  bottom: -3.5rem;
+  right: 0;
+  transition: all 0.4s;
+}
+.harita .hakkinda-cizgi:hover {
+  background-color: #003b5a;
+}
+.harita .hakkinda-cizgi .harf {
+  left: 1.5rem;
+  top: 1.2rem;
+  color: white;
+}
+.harita .hakkinda-cizgi .harf h1 {
+  font-size: 4rem;
+  font-family: "BhuTuka Expanded One", cursive;
+}
+
+.hakkında .sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.hakkında .sidebar ul .sidebar-items li {
+  border-bottom: 2px dashed rgb(156, 143, 143);
+  padding: 0;
+  margin: 0;
+}
+.hakkında .sidebar ul .sidebar-items a {
+  color: black;
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+}
+.hakkında .sidebar ul .sidebar-items a:hover {
+  color: #018BD3;
+}
+.hakkında .hakkinda-resim img {
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 2rem;
+  border-radius: 3px;
+}
+.hakkında .hakkinda-icerik h3 {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .randevu-icerik {
+    margin-top: 2rem;
+  }
+  .slider {
+    margin-bottom: 8rem;
+  }
+  .aciklama {
+    margin-top: 25rem;
+    margin-bottom: 1rem;
+  }
+  .aciklama .aciklama-resim img {
+    width: 40%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .aciklama .aciklama-resim img {
+    width: 50%;
+  }
+  .ikinci-icerik {
+    border: 0;
+  }
+  .ikinci-icerik .baslik {
+    justify-content: center;
+  }
+  .ikinci-icerik .ikinci-icerik-items {
+    margin-bottom: 1rem;
+  }
 }/*# sourceMappingURL=main.css.map */
