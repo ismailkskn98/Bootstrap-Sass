@@ -267,13 +267,13 @@ section{
 #hakkimizda {
     background-image: url(/images/hakkımda.jpg);
     background-repeat: center center;
-    height: 50rem;
+    height: 55rem;
     background-attachment: fixed;
     background-position: center;
     color: white;
     .hakkimdaRenk {
     background-color: rgba(34, 34, 34, 0.9);
-    height: 50rem;
+    height: 55rem;
     }
     h6{
         font-weight: 600;
@@ -284,6 +284,39 @@ section{
     line-height: 250%;
     }
 }
+#hizmetlerimiz {
+    p{
+        line-height: 200%;
+        letter-spacing: 2px;
+        color: rgb(85, 85, 85);
+    }
+    .webTasarim {
+        height: 35rem;
+        background-color: #F0F0F0;
+        -webkit-border-bottom-right-radius: 300px;
+	    -moz-border-radius-bottomright: 300px;
+	    border-bottom-right-radius: 300px;
+        .webTasarimKutu{
+            height: 100%;
+            .webTasarimResim{
+                margin-top: -4.5rem;
+                margin-left: -1rem;
+            }
+            .webTasarimResim2{
+                margin-bottom: -5rem;
+                margin-left: -1.5rem;
+                img{
+                    object-fit: cover;
+                }
+            }
+            .webTasarimicerik {
+                margin-top: 4rem;
+                margin-right: -1.5rem;
+            }
+        }
+    }
+
+    }
 #iletisim {
     .iletisimForm{
         color:#5d5d5d;

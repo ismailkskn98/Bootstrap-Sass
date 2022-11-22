@@ -239,14 +239,14 @@ section .container .row .on-icerik-yazi .cizgi hr {
 #hakkimizda {
   background-image: url(/images/hakkımda.jpg);
   background-repeat: center center;
-  height: 50rem;
+  height: 55rem;
   background-attachment: fixed;
   background-position: center;
   color: white;
 }
 #hakkimizda .hakkimdaRenk {
   background-color: rgba(34, 34, 34, 0.9);
-  height: 50rem;
+  height: 55rem;
 }
 #hakkimizda h6 {
   font-weight: 600;
@@ -255,6 +255,36 @@ section .container .row .on-icerik-yazi .cizgi hr {
 #hakkimizda p {
   color: white;
   line-height: 250%;
+}
+
+#hizmetlerimiz p {
+  line-height: 200%;
+  letter-spacing: 2px;
+  color: rgb(85, 85, 85);
+}
+#hizmetlerimiz .webTasarim {
+  height: 35rem;
+  background-color: #F0F0F0;
+  border-bottom-right-radius: 300px;
+}
+#hizmetlerimiz .webTasarim .webTasarimKutu {
+  height: 100%;
+}
+#hizmetlerimiz .webTasarim .webTasarimKutu .webTasarimResim {
+  margin-top: -4.5rem;
+  margin-left: -1rem;
+}
+#hizmetlerimiz .webTasarim .webTasarimKutu .webTasarimResim2 {
+  margin-bottom: -5rem;
+  margin-left: -1.5rem;
+}
+#hizmetlerimiz .webTasarim .webTasarimKutu .webTasarimResim2 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#hizmetlerimiz .webTasarim .webTasarimKutu .webTasarimicerik {
+  margin-top: 4rem;
+  margin-right: -1.5rem;
 }
 
 #iletisim .iletisimForm {
