@@ -64,6 +64,19 @@ header.sticky{
         }
     }
 }
+.slider {
+    background-image: url(/images/slider5.jpg);
+    background-repeat: center center;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 800px;
+
+    .sliderRenk{
+        background-color: rgba(34, 34, 34, 0.6);
+        height: 800px;
+    }
+}
 // randevu
 .randevu-icerik{
     background-color: #222222;
@@ -251,7 +264,103 @@ section{
     }
 
 }
-
+#hakkimizda {
+    background-image: url(/images/hakkımda.jpg);
+    background-repeat: center center;
+    height: 50rem;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    .hakkimdaRenk {
+    background-color: rgba(34, 34, 34, 0.9);
+    height: 50rem;
+    }
+    h6{
+        font-weight: 600;
+        text-align: center;
+    }
+    p{
+    color: white;
+    line-height: 250%;
+    }
+}
+#iletisim {
+    .iletisimForm{
+        color:#5d5d5d;
+        font-size: 15px;
+        p{
+            margin-bottom: 3rem;
+        }
+        .form-grup{
+            padding-bottom: 1.5rem;
+            .form-wrap{
+                margin: 1rem;               
+                width: 100%;      
+                border-bottom: 1px solid #d4d4d4;   
+                &:hover{
+                    border-bottom: 1px solid rgb(160, 160, 160);
+                }
+                &:focus{
+                    border-bottom: 1px solid rgb(160, 160, 160);
+                }    
+                input{
+                    padding: 0.5rem;
+                    width: 100%;
+                    &:focus{
+                        outline:none;
+                    }
+                }
+                textarea{
+                    width: 100%;
+                    &:focus{
+                        outline:none;
+                    }
+                }
+            }
+        }
+        .btn-wrap{
+            display: flex;
+            justify-content: end;
+            padding: 1rem;
+            .button{
+                width: 15%;
+                height: 2.5rem;
+                background-color: #018BD3;
+                border: none;
+                color: white;
+                border-radius: 2%;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    background-color: #0069a1;
+                }
+            }
+        }
+    }
+    .iletisimBilgileri{
+        background: #222222;
+        color: white;
+        font-size: 1.3rem;
+        border-radius: 1%;
+        h5{
+            font-size: 1.1rem;
+            color: #018BD3;
+        }
+        p{
+            color: white;
+        }
+        i {
+            padding-right: 0.5rem;
+        }
+        .baslik{
+            .baslik-cizgi{
+                background-color: #ffffff;
+                width: 40px;
+                height: 1px;
+                margin-top: 1.9rem;           
+            }
+        }
+    }
+}
 
 // footer
 footer{
@@ -347,19 +456,27 @@ footer{
         }
     }
 }
-// .yukariButon{
-//     width: 60px;
-//     height: 60px;
-//     border-radius: 100%;
-//     margin-bottom: 4rem;
-//     margin-right: 4rem;
-//     background-color: #0176b4;
-//     a{
-//         font-size: 3rem;
-//         color: #fff;
-//     }
-// }
-
+#yukari{
+    display:none;
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    background:#0077b8;
+    width:50px;
+    height:50px;
+    text-align:center;
+    line-height: 50px;
+    border-radius:35px;
+    transition:all .3s ease;
+    z-index:999
+}
+#yukari i{
+    color:#fff;
+    font-size:3rem;
+}
+#yukari:hover{
+    background-color:#222222;
+} 
 // hakkında css
 @import 'hakkında';
 

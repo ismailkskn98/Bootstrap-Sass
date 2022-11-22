@@ -60,9 +60,7 @@
 
     <!-- hızlı randevu -->
         <div class="container-fluid d-flex flex-column p-0 position-relative justify-content-lg-center slider">
-            <div class="resim opacity-100">
-                <img src="./images/slder.jpg" width="100%" height="700px" alt="silder">
-            </div>
+        <div class="container-fluid sliderRenk d-flex flex-column p-0 position-relative justify-content-lg-center">
             <div class="container align-self-center position-absolute top-50">
                 <div class="row">
                     <div class="col-lg-8 text-light">
@@ -111,6 +109,7 @@
                     </div>
                 </div>               
             </div>
+        </div>  
         </div>
 
         <!-- Ön bilgi -->
@@ -231,12 +230,39 @@
 
         <!-- Hakkımızda -->
         <section id="hakkimizda" class="basliklar">
-            <div class="container text-center pt-lg-5">
-                <div class="col-md-12 pt-5 mt-4 fw-bold text-uppercase d-flex position-relative d-flex justify-content-center align-items-center"><h2>Hakkimizda</h2> 
-                    <div class="col-md-1 position-absolute baslik-cizgi"></div>                 
-                </div>
-                <div class="col-md-12">
-                    <p>Sizler bizim referanslarımızsınız bizler için çok değerlisiniz.</p>
+            <div class="container-fluid hakkimdaRenk pt-lg-5">
+                <div class="container ">
+                    <div class="col-md-12 mt-5 pt-3 fw-bold text-uppercase d-flex position-relative d-flex justify-content-center align-items-center">
+                        <h2>Hakkimizda</h2> 
+                        <div class="col-md-1 position-absolute baslik-cizgi"></div>                 
+                    </div>
+                    <div class="col-md-12">
+                        <p style="text-align: center;">Kişiye ve kurumlara özel özgün, yenilikçi ve kullanıcı dostu web siteleri üretiyoruz.</p>
+                        <div class="row pt-4">
+                            <div class="col-md-5">
+                                <h6>Biz</h6>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, excepturi corporis, veniam iste aut, aspernatur doloremque voluptates ad iure mollitia inventore soluta eius dolores magnam illum est quasi nesciunt repudiandae possimus consectetur atque suscipit praesentium reprehenderit voluptate! Veritatis excepturi, eos at quis suscipit vitae illo facilis libero dolore fuga incidunt magnam aliquid delectus, ad, consequatur voluptate. Odit illo delectus, repudiandae maiores maxime tempora aperiam sequi voluptates nostrum officia debitis laborum accusamus saepe neque distinctio reiciendis nobis sunt atque asperiores, provident nemo porro beatae. Obcaecati, itaque ipsum repudiandae necessitatibus consectetur provident sed nisi, inventore tenetur id aspernatur quia at minus distinctio!</p>
+                            </div>
+                            <div class="col-md-7 hakkimizda-wrap">
+                                <div class="col-lg-12">
+                                    <h6> Sorumluluklarımız</h6>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse amet suscipit voluptates, enim quibusdam impedit blanditiis hic dolorum officiis! Eaque.</p>
+                                </div>
+                                <div class="col-lg-12">
+                                    <h6> Kimelere hizmet verebiliriz ?</h6>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse amet suscipit voluptates, enim quibusdam impedit blanditiis hic dolorum officiis! Eaque.</p>
+                                </div>
+                                <div class="col-lg-12">
+                                    <h6>  Vizyonumuz</h6>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse amet suscipit voluptates, enim quibusdam impedit blanditiis hic dolorum officiis! Eaque.</p>
+                                </div>
+                                <div class="col-lg-12">
+                                    <h6>  Kalite anlayışımız</h6>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse amet suscipit voluptates, enim quibusdam impedit blanditiis hic dolorum officiis! Eaque.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -246,9 +272,6 @@
             <div class="container text-center pt-lg-5">
                 <div class="col-md-12 pt-5 mt-4 fw-bold text-uppercase d-flex position-relative d-flex justify-content-center align-items-center"><h2>Hizmetlerimiz</h2> 
                     <div class="col-md-1 position-absolute baslik-cizgi"></div>                 
-                </div>
-                <div class="col-md-12">
-                    <p>Meto Yazılım müşterilerine daha hizmet verebilmek için her geçen gün hizmet yelpazesini genişletmektedir.</p>
                 </div>
             </div>
         </section>
@@ -260,11 +283,75 @@
                     <div class="col-md-1 position-absolute baslik-cizgi"></div>                 
                 </div>
                 <div class="col-md-12">
-                    <p>Meto Yazılım müşterilerine daha hizmet verebilmek için her geçen gün hizmet yelpazesini genişletmektedir.</p>
+                    <p>Bizimle İletişim Kurun </p>
                 </div>
-                <div class="row">
-                    <div class="col-md-5 bg-danger"><h3>İletişim Bilgilerimiz</h3></div>
-                    <div class="col-md-7 bg-primary"><h3>Bize Ulaşın</h3></div>
+                <div class="row mt-5">
+                    <div class="col-md-9 text-start iletisimForm ">
+                        <h3>İletişim Formu</h3>
+                        <p>Aşağıdaki iletişim formunu vakit ayırıp doldurmanız; belki de iş hayatınızın yeni bir dönüm noktası olabilir. Ayrıca bu formu, öneri ve şikayetleriniz için de kullanabilirsiniz. Hizmetlerimizi daha da geliştirmek, sizi daha iyi anlamak ve kazandırmak adına görüşleriniz bizim için değerlidir.</p> 
+                        <form action="#">
+                            <label class="form-grup d-flex align-items-center">
+                                <i class="bi bi-person-fill"></i>
+                                <span class="form-wrap">
+                                    <input type="text" class="border-0" name="ad" placeholder="Adınız Soyadınız">
+                                </span>
+                            </label>
+                            <label class="form-grup d-flex align-items-center">
+                                <i class="bi bi-envelope-fill"></i>
+                                <span class="form-wrap">
+                                    <input type="text" class="border-0" name="ad" placeholder="E-Mail Adresiniz">
+                                </span>
+                                <i class="bi bi-telephone-fill"></i>
+                                <span class="form-wrap">
+                                    <input type="text" class="border-0" name="ad" placeholder="Telefon Numaranız">
+                                </span>
+                            </label>
+                            <label class="form-grup d-flex">
+                                <i class="bi bi-chat-right-fill pt-2"></i>
+                                <span class="form-wrap">
+                                    <textarea name="mesaj" class="border-0" id="mesaj"rows="5" cols="50" placeholder="Mesajınız"></textarea>
+                                </span>
+                            </label>
+                            <div class="btn-wrap">
+                                <input type="submit" value="Gönder" class="button">
+                            </div>
+                        </form>                      
+                    </div>
+                    <div class="col-md-3 iletisimBilgileri pt-4">
+                        <div class="col-sm-12 fw-bold text-uppercase d-flex position-relative d-flex justify-content-center"> 
+                            <h3>Bize Ulaşın</h3>
+                            <div class="col-md-1 position-absolute baslik-cizgi"></div>
+                        </div>
+                        <div class="baslik mt-5 d-flex justify-content-center align-items position-relative"><h5>Temsilci</h5>
+                            <div class="col-md-1 position-absolute baslik-cizgi"></div>
+                        </div>
+                        <div class="bilgiwrap col-md-12 d-flex justify-content-center align-items-center">
+                            <i class="bi bi-telephone-fill"></i>&nbsp;
+                            <p>543 593 67 46</p>                               
+                        </div>    
+                        <div class="baslik mt-3 position-relative d-flex justify-content-center align-items"><h5>Developer</h5>
+                            <div class="col-md-1 position-absolute baslik-cizgi"></div>
+                        </div> 
+                        <div class="bilgiwrap col-md-12 d-flex justify-content-center align-items-center">
+                            <i class="bi bi-telephone-fill"></i>&nbsp;
+                            <p> 542 798 20 78</p>    
+                        </div>      
+                        <div class="baslik mt-3 position-relative d-flex justify-content-center align-items"><h5>Mail</h5>
+                            <div class="col-md-1 position-absolute baslik-cizgi"></div>
+                        </div> 
+                        <div class="bilgiwrap col-md-12 d-flex justify-content-center align-items-center">
+                            <i class="bi bi-envelope-fill"></i>&nbsp;
+                            <p>metoyazilim@gmail.com</p>    
+                        </div>  
+                        <div class="baslik mt-4 position-relative d-flex justify-content-center align-items"><h5>Öneri ve Şikayetleriniz</h5>
+                            <div class="col-md-1 position-absolute baslik-cizgi"></div>
+                        </div> 
+                        <div class="bilgiwrap col-md-12 d-flex justify-content-center align-items-center">
+                            <i class="bi bi-envelope-fill"></i>&nbsp;
+                            <p>metoyazilimsikayet@gmail.com</p>    
+                        </div> 
+                    </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -331,19 +418,36 @@
                         </div>
                     </div>
                 </div>
+            </div>           
+            <!-- yukarı çık butonu -->
+            <div id="yukari">
+                <i class="bi bi-arrow-up-short"></i>
             </div>
-            
-            <!-- yukarı çık butonu
-            <div class="yukariButon position-fixed bottom-0 end-0 d-flex justify-content-center align-items-center">
-                <a href="#page-body"><i class="bi bi-arrow-up"></i></a>
-            </div> -->
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+    <!-- navbar -->
     <script>
         window.addEventListener("scroll", function(){
             var header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 0);
         })
+    </script>
+
+            <!-- // Kayma -->
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 350) {
+                $('#yukari').fadeIn(200);
+            } else {
+                $('#yukari').fadeOut(200);
+            }
+        });
+
+        // Tıklama
+        $('#yukari').on('click', function() {
+            $("html, body").animate({scrollTop: 0}, 0);
+        });
     </script>
 </body>
 </html>

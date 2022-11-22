@@ -62,6 +62,19 @@ header.sticky li a {
   background-color: #018BD3;
 }
 
+.slider {
+  background-image: url(/images/slider5.jpg);
+  background-repeat: center center;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 800px;
+}
+.slider .sliderRenk {
+  background-color: rgba(34, 34, 34, 0.6);
+  height: 800px;
+}
+
 .randevu-icerik {
   background-color: #222222;
 }
@@ -223,6 +236,101 @@ section .container .row .on-icerik-yazi .cizgi hr {
   height: auto;
 }
 
+#hakkimizda {
+  background-image: url(/images/hakkımda.jpg);
+  background-repeat: center center;
+  height: 50rem;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+}
+#hakkimizda .hakkimdaRenk {
+  background-color: rgba(34, 34, 34, 0.9);
+  height: 50rem;
+}
+#hakkimizda h6 {
+  font-weight: 600;
+  text-align: center;
+}
+#hakkimizda p {
+  color: white;
+  line-height: 250%;
+}
+
+#iletisim .iletisimForm {
+  color: #5d5d5d;
+  font-size: 15px;
+}
+#iletisim .iletisimForm p {
+  margin-bottom: 3rem;
+}
+#iletisim .iletisimForm .form-grup {
+  padding-bottom: 1.5rem;
+}
+#iletisim .iletisimForm .form-grup .form-wrap {
+  margin: 1rem;
+  width: 100%;
+  border-bottom: 1px solid #d4d4d4;
+}
+#iletisim .iletisimForm .form-grup .form-wrap:hover {
+  border-bottom: 1px solid rgb(160, 160, 160);
+}
+#iletisim .iletisimForm .form-grup .form-wrap:focus {
+  border-bottom: 1px solid rgb(160, 160, 160);
+}
+#iletisim .iletisimForm .form-grup .form-wrap input {
+  padding: 0.5rem;
+  width: 100%;
+}
+#iletisim .iletisimForm .form-grup .form-wrap input:focus {
+  outline: none;
+}
+#iletisim .iletisimForm .form-grup .form-wrap textarea {
+  width: 100%;
+}
+#iletisim .iletisimForm .form-grup .form-wrap textarea:focus {
+  outline: none;
+}
+#iletisim .iletisimForm .btn-wrap {
+  display: flex;
+  justify-content: end;
+  padding: 1rem;
+}
+#iletisim .iletisimForm .btn-wrap .button {
+  width: 15%;
+  height: 2.5rem;
+  background-color: #018BD3;
+  border: none;
+  color: white;
+  border-radius: 2%;
+  transition: all 0.3s ease-in-out;
+}
+#iletisim .iletisimForm .btn-wrap .button:hover {
+  background-color: #0069a1;
+}
+#iletisim .iletisimBilgileri {
+  background: #222222;
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 1%;
+}
+#iletisim .iletisimBilgileri h5 {
+  font-size: 1.1rem;
+  color: #018BD3;
+}
+#iletisim .iletisimBilgileri p {
+  color: white;
+}
+#iletisim .iletisimBilgileri i {
+  padding-right: 0.5rem;
+}
+#iletisim .iletisimBilgileri .baslik .baslik-cizgi {
+  background-color: #ffffff;
+  width: 40px;
+  height: 1px;
+  margin-top: 1.9rem;
+}
+
 footer {
   background-color: #222222;
 }
@@ -296,6 +404,30 @@ footer .sosyal .face a:hover {
 }
 .footer-haklar a:hover {
   color: #bcc4c9;
+}
+
+#yukari {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #0077b8;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 35px;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+#yukari i {
+  color: #fff;
+  font-size: 3rem;
+}
+
+#yukari:hover {
+  background-color: #222222;
 }
 
 .harita {
